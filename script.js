@@ -93,6 +93,14 @@ const displayMoreThan1000 = map => {
 
 
 
+const treesReport = () => {
+	console.log('------Park Report-------');
+	
+	// Display average park age
+	averParkAge(parks);
+}
+
+
 
 
 
