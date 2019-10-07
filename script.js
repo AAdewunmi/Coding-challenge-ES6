@@ -91,6 +91,17 @@ const displayMoreThan1000 = map => {
 	}
 }
 
+const displayStreetsLegths = map => {
+	let lengths = [];
+	let totalLength;
+	
+	for (let [key, value] of map.entries()) {
+		lengths.push(value.length);
+	}
+	totalLength = lengths.reduce((prev, cur) => prev + cur);
+}
+
+
 
 
 const treesReport = () => {
