@@ -106,6 +106,18 @@ const treesReport = () => {
 	displayMoreThan1000(parks);
 }
 
+const streetsReport = () => {
+	console.log('------Streets Report-------');
+	
+	// Display total and average length of streets
+	
+	
+	
+	// Display size classification of all streets
+
+
+}
+
 
 
 
