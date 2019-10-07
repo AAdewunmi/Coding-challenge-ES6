@@ -17,4 +17,39 @@ All the report data should be printed to the console.
 
 */
 
+// Create class for town element and subclasses for parks and streets
+class TownElement {
+	constructor(name, year) {
+		this.name = name;
+		this.year = year;
+	}
+	
+	calcAge() {
+		const age = new Date().getFullYear() - this.year;
+		return age;
+	}
+}
+
+class Park extends TownElement {
+	constructor (name, year, trees, area) {
+		super (name, year);
+		this.trees = trees;
+		this.area = area; //km2
+		this.age = this.calcAge();
+	}
+	
+	calcTreeDensity() {
+		const density = this.trees / this.area;
+		console.log(`${this.name} has a density of ${density} trees per square km.`)
+	}	
+}
+
+class Street extends TownElement {
+	constructor (name, year, length, size = 'normal') {
+		super (name, year);
+		this.length = length;
+		this.size = size;
+	}
+}
+
 
