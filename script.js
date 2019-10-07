@@ -98,6 +98,12 @@ const treesReport = () => {
 	
 	// Display average park age
 	averParkAge(parks);
+			
+	// Display tree density in each park
+	displayTreeDensity(parks);
+	
+	// Display parks with more than 1000 trees
+	displayMoreThan1000(parks);
 }
 
 
