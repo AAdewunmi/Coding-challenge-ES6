@@ -52,4 +52,15 @@ class Street extends TownElement {
 	}
 }
 
+// Set all items inside map
+const parks = new Map();
+parks.set('park1', new Park('Green Park', 1987, 1290, 10));
+parks.set('park2', new Park('Oak Park', 1968, 1200, 20));
+parks.set('park3', new Park('Revolution Park', 1948, 978, 15));
+
+const streets = new Map();
+streets.set('street1', new Street('Jones Street', 1998, 47, 'big'));
+streets.set('street2', new Street('Abraham Street', 1948, 27, 'small'));
+streets.set('street3', new Street('May Street', 2006, 34));
+streets.set('street4', new Street('Roy Street', 2009, 13, 'tiny'));
 
