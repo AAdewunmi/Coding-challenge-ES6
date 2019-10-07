@@ -64,3 +64,54 @@ streets.set('street2', new Street('Abraham Street', 1948, 27, 'small'));
 streets.set('street3', new Street('May Street', 2006, 34));
 streets.set('street4', new Street('Roy Street', 2009, 13, 'tiny'));
 
+const averParkAge = element => {
+	let totalAge = 0;
+	for (let [key, value] of element.entries()) {
+		if (key.startsWith('park')) {
+			totalAge += value.age;
+		}	
+	}
+	console.log(`Average year of each park is ${Math.floor(totalAge / element.size)}.`);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
