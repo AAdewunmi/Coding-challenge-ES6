@@ -110,6 +110,19 @@ const treesReport = () => {
 
 
 
+// Display annual report
+const displayReport = () => {
+	treesReport();
+	streetsReport();
+}
+
+
+displayReport();
+
+
+
+
+
 
 
 
