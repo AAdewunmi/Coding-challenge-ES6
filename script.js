@@ -135,13 +135,8 @@ const treesReport = () => {
 const streetsReport = () => {
 	console.log('------Streets Report-------');
 	
-	// Display total and average length of streets
-	
-	
-	
-	// Display size classification of all streets
-
-
+	// Display size classification, total length and average length of all streets
+	displayStreetData(streets);
 }
 
 
