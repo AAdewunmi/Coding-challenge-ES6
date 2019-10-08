@@ -104,6 +104,17 @@ const calculateStreetsLegths = map => {
 	return [totalLength, totalLength / lengths.length];
 }
 
+const displayStreetData = map => {
+	const [totalLength, average] = calculateStreetsLegths(streets); // Use of ES6 destructuring
+
+	for (let [key, value] of map.entries()) {
+		console.log(`${value.name}'s size classification is: ${value.size}. `)
+	}
+
+	console.log(`Total length of all streets is ${totalLength}km and average length is ${average}km.`)
+}
+
+
 
 
 
